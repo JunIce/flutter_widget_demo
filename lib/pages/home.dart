@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class HomePage extends StatefulWidget {
+class DemoHomePage extends StatefulWidget {
   @override
-  _HomePageState createState() => _HomePageState();
+  _DemoHomePageState createState() => _DemoHomePageState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _DemoHomePageState extends State<DemoHomePage> {
   List<String> _tabs = [
     "SizedBox",
     "Dismissible",

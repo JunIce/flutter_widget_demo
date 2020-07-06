@@ -1,6 +1,6 @@
-import 'package:demo_widgets/pages/home.dart';
 import 'package:demo_widgets/widgets/dismissable.dart';
 import 'package:demo_widgets/widgets/sized_box.dart';
+import 'package:demo_widgets/xiaohongshu.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: HomePage(),
+      home: XiaoHongShu(),
       routes: {
         'sizedboxdemo': (context) => SizedBoxDemo(),
         'dismissibledemo': (context) => DismissibleDemo()
