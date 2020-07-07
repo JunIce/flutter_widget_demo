@@ -1,3 +1,4 @@
+import 'package:demo_widgets/pages/home/widgets/home-find-list.dart';
 import 'package:flutter/material.dart';
 import 'package:demo_widgets/pages/home/widgets/home-recommend-list.dart';
 
@@ -33,6 +34,7 @@ class _XiaoHongShuState extends State<XiaoHongShu>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
         backgroundColor: Colors.white,
         elevation: 0,
@@ -48,7 +50,7 @@ class _XiaoHongShuState extends State<XiaoHongShu>
               controller: _tabController,
               indicatorColor: Colors.red,
               indicatorSize: TabBarIndicatorSize.label,
-              labelPadding: EdgeInsets.all(0),
+              indicatorPadding: EdgeInsets.all(6),
             )),
         actions: [Container()],
         bottom: PreferredSize(
@@ -75,9 +77,7 @@ class _XiaoHongShuState extends State<XiaoHongShu>
       ),
       body: TabBarView(controller: _tabController, children: [
         HomeRecommendList(),
-        Center(
-          child: Text("2"),
-        ),
+        HomeFindList(),
         Center(
           child: Text("3"),
         )
@@ -85,7 +85,3 @@ class _XiaoHongShuState extends State<XiaoHongShu>
     );
   }
 }
-
-
-
-
