@@ -72,6 +72,9 @@ class _HomeFindListState extends State<HomeFindList>
             useravatar:
                 "https://img.xiaohongshu.com/avatar/5c92ec80e1cd0d0001b0ab09.jpg@80w_80h_90q_1e_1c_1x.jpg",
             username: "叶公子",
+            onTap: () {
+              Navigator.of(context).pushNamed("detail");
+            },
           );
         },
         staggeredTileBuilder: (int index) => StaggeredTile.fit(2),

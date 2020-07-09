@@ -1,3 +1,4 @@
+import 'package:demo_widgets/pages/detail/detail.dart';
 import 'package:demo_widgets/widgets/dismissable.dart';
 import 'package:demo_widgets/widgets/sized_box.dart';
 import 'package:demo_widgets/xiaohongshu.dart';
@@ -20,7 +21,8 @@ class MyApp extends StatelessWidget {
       home: XiaoHongShu(),
       routes: {
         'sizedboxdemo': (context) => SizedBoxDemo(),
-        'dismissibledemo': (context) => DismissibleDemo()
+        'dismissibledemo': (context) => DismissibleDemo(),
+        'detail': (context) => DetailPage()
       },
     );
   }
